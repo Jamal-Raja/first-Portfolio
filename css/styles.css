@@ -25,7 +25,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: open-sans, sans-serif;
+    font-family: 'poppins', sans-serif;
 }
 
 body {
@@ -188,11 +188,26 @@ header .links a:hover { color: var(--brand); }
 
 .about-content { 
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) minmax(300px, 2fr);
+    grid-template-columns: minmax(200px, 1fr) minmax(300px, 1.9fr);
     align-items: center;
     gap: 20px;
-    max-width: 900px;
+    max-width: 1300px;
     padding: 0 16px;
+}
+
+.logo a span, .about-content h1 span {
+    color: var(--brand);
+}
+
+.about-content h1 {    
+    display: block;          
+    font-size: 6rem;
+    font-weight: 900;
+    line-height: 1;             
+}
+
+.about-content a {
+    color: #fff;
 }
 
 .projects-btn {
@@ -200,9 +215,16 @@ header .links a:hover { color: var(--brand); }
     font-weight: bold; 
     color: #fff;
     border: 2px solid #fff;
-    border-radius: 20px;   
+    border-radius: 30px;   
     padding: 12px 18px;
     justify-self: start;
+}
+
+.projects-btn:hover {
+    background-color: var(--brand-hover);
+    cursor: pointer;
+    border: 2px solid var(--brand-hover);
+    transition: all 0.3s ease;
 }
 
 /* RESPONSIVE DESIGN */
