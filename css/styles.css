@@ -31,7 +31,7 @@
 body {
     height: 100vh;    
     background-color: var(--bg);
-    color: var(--text);
+    color: var(--text);    
 }
 
 li {
@@ -50,11 +50,15 @@ a:hover {
 
 /* HEADER */
 header {
-    position: relative;
+    position: sticky;
+    position: -webkit-sticky; 
+    top: 0;
+    z-index: 1000;
     padding: 0 2rem;            
 
-    background-color: var(--surface);
-    background-color: color-mix(in srgb, var(--surface) 90%, transparent); 
+    
+    background-color: rgb(45, 0, 79);
+    background-color: color-mix(in srgb, rgb(45, 0, 79) 90%, transparent); 
     border-bottom: 1px solid var(--hairline);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
@@ -73,10 +77,14 @@ header {
 .navbar-container .logo a {
     font-size: 1.5rem;
     font-weight: bold;  
-    color: var(--text);  
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);    
+    -webkit-font-smoothing: antialiased; 
+    -moz-osx-font-smoothing: grayscale;  
+    text-rendering: optimizeLegibility;  
 }
 
-header .links a { color: var(--text); }
+header .links a { color: #fff; }
 header .links a:hover { color: var(--brand); }
 
 .navbar-container .links {
@@ -173,7 +181,6 @@ header .links a:hover { color: var(--brand); }
         width: unset;
 
     }
-
 }
 
 /* ABOUT SECTION */
