@@ -193,7 +193,7 @@ header .links a:hover { color: var(--brand); }
 
 .about-content { 
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) minmax(300px, 1.9fr);
+    grid-template-columns: minmax(200px, 1fr) minmax(300px, 1.2fr);
     align-items: center;
     gap: 20px;
     max-width: 1300px;
@@ -209,6 +209,11 @@ header .links a:hover { color: var(--brand); }
     font-size: 6rem;
     font-weight: 900;
     line-height: 1;             
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;    
 }
 
 .about-content a {
