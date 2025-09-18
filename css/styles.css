@@ -187,38 +187,30 @@ header .links a:hover { color: var(--brand); }
 }
 
 .about-content { 
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(300px, 2fr);
     align-items: center;
     gap: 20px;
     max-width: 900px;
     padding: 0 16px;
 }
 
-.about-content h1 {flex: 1 1 auto; min-width: 200px;}
-.about-content p {flex: 2 1 300px;}
-.about-content a {flex-basis: 100%; align-self: flex-start;}
-
 .projects-btn {
-    display: flex;
+    display: inline-flex;
     font-weight: bold; 
     color: #fff;
     border: 2px solid #fff;
     border-radius: 20px;   
     padding: 12px 18px;
+    justify-self: start;
 }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 992px) {
     .about-content {
-        flex-direction: column;
-        align-items: flex-start;
+        grid-template-columns: 1fr;
         gap: 14px;        
     }
-
-    .about-content h1 {flex: none; min-width: 0;}
-    .about-content p {flex: none; max-width: 100%;}
-    .about-content a {flex-basis: auto;}
 }
 
 /* PROJECTS SECTION */
