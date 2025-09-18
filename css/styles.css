@@ -72,7 +72,7 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: flex-start;    
 }
 
 .navbar-container .logo a {
@@ -90,14 +90,16 @@ header .links a:hover { color: var(--brand); }
 
 .navbar-container .links {
     display: flex;
-    gap: 4rem;    
+    gap: 4rem;
+    margin-left: 18rem;    
 }
 
 .navbar-container .toggle-btn {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
-    display: none;    
+    display: none;
+    margin-left: 1rem;    
 }
 
 .action-btn {
@@ -111,6 +113,7 @@ header .links a:hover { color: var(--brand); }
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2s ease;
+    margin-left: auto;
 }
 
 .action-btn:hover {
@@ -130,6 +133,7 @@ header .links a:hover { color: var(--brand); }
     margin-left: 1rem;
     display: flex;
     align-items: center;
+    margin-left: 1rem;
 }
 
 .theme-toggle:hover {
