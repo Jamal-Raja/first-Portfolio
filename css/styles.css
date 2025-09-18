@@ -190,12 +190,14 @@ header .links a:hover { color: var(--brand); }
     background: #1D8A75;
     color: #fff;
 
-    height: 80vh;    
+    height: 90vh;    
     display: flex;
     justify-content: center;
     align-items: center;   
     gap: 50px;
-    background-color: #1D8A75;     
+    background-color: #1D8A75; 
+    padding-top: 60px;
+    margin-top: -60px;    
 }
 
 .about-content { 
