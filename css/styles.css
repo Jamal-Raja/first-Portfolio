@@ -1,24 +1,25 @@
 :root {
   /* Light theme */
-  --bg: #F7F7F8;          /* Page background */
-  --surface: #FFFFFF;     /* Cards, containers, navbars, sections */
-  --text: #1B1F24;        /* Main body text */
-  --text-muted: #5B6470;  /* Secondary text (captions, footers, meta info) */
-  --brand: #1F4B99;       /* Primary brand colour (links, buttons, highlights) */
-  --brand-hover: #184083; /* Hover/active state for brand elements */
-  --support: #1D8A75;     /* Secondary accent (badges, highlights, small CTAs) */
-  --hairline: #E6E8EC;    /* Subtle borders, dividers, table lines */
+  --bg: #FFFFFF;          /* Pure white background */
+  --surface: #F8F8FF;     /* Light lavender-white for cards, containers */
+  --text: #1A0F66;        /* Darker royal blue-purple for main body text */
+  --text-muted: #3F2A99;  /* Deeper purple for secondary text */
+  --brand: #5B42F5;       /* Vibrant royal purple for links, buttons, highlights */
+  --brand-hover: #3A27D4; /* Darker purple for hover/active states */
+  --support: #8A70E6;     /* Lighter, vibrant purple accent for badges, highlights */
+  --hairline: #D0C0E0;    /* Lighter lavender-gray for borders, dividers */
 }
-/* Dark theme */
+
 [data-theme="dark"] {
-  --bg: #0F1216;          /* Page background */
-  --surface: #14181E;     /* Cards, containers, navbars, sections */
-  --text: #E9EDF3;        /* Main body text */
-  --text-muted: #A9B1BB;  /* Secondary text (captions, footers, meta info) */
-  --brand: #6FA6FF;       /* Primary brand colour (links, buttons, highlights) */
-  --brand-hover: #8CBDFF; /* Hover/active state for brand elements */
-  --support: #4BC2AE;     /* Secondary accent (badges, highlights, small CTAs) */
-  --hairline: #242A32;    /* Subtle borders, dividers, table lines */
+  /* Dark theme */
+  --bg: #0A0718;          /* Deeper midnight purple background */
+  --surface: #1E0F4D;     /* Rich, almost black purple for cards, containers */
+  --text: #F0E8FF;        /* Brighter lavender for main body text */
+  --text-muted: #C0B0DD;  /* Lighter lavender-gray for secondary text */
+  --brand: #5B42F5;       /* Vibrant royal purple for links, buttons, highlights */
+  --brand-hover: #3A27D4; /* Slightly darker purple for hover/active states */
+  --support: #4C2EAA;     /* Deeper purple accent for badges, highlights */
+  --hairline: #2A1A50;    /* Darker purple-gray for borders, dividers */
 }
 
 * {
@@ -122,6 +123,19 @@ header .links a:hover { color: var(--brand); }
     scale: 0.95;
 }
 
+.theme-toggle {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.theme-toggle:hover {
+    color: var(--brand);
+}
+
 /* DROPDOWN MENU */
 .dropdown-menu {
     display: none;
@@ -173,6 +187,11 @@ header .links a:hover { color: var(--brand); }
     .dropdown-menu {
         display: block;
     }
+
+    .theme-toggle {
+        display: block;
+        color: #fff; 
+    }
 }
 
 @media (max-width: 576px) {
@@ -187,7 +206,7 @@ header .links a:hover { color: var(--brand); }
 .about-section {
     position: relative;
     overflow: hidden;
-    background: #1D8A75;
+    background: var(--support);
     color: #fff;
 
     height: 90vh;    
@@ -195,7 +214,7 @@ header .links a:hover { color: var(--brand); }
     justify-content: center;
     align-items: center;   
     gap: 50px;
-    background-color: #1D8A75; 
+    background-color: var(--support); 
     padding-top: 60px;
     margin-top: -60px;    
 }
