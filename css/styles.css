@@ -137,7 +137,15 @@ header .links a:hover { color: var(--brand); }
 }
 
 .theme-toggle:hover {
-    color: var(--brand);
+    color: var(--brand-hover);
+    scale: 1.3;        
+    transition: scale 0.2s ease, color 0.2s ease;
+}
+
+.theme-toggle:active {
+    scale: 1.1;
+    color: #fff;
+    transition: scale 0.1s ease, color 0.1s ease;
 }
 
 /* DROPDOWN MENU */
