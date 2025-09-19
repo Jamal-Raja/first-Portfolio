@@ -8,6 +8,7 @@
   --brand-hover: #3A27D4; /* Darker purple for hover/active states */
   --support: #8A70E6;     /* Lighter, vibrant purple accent for badges, highlights */
   --hairline: #D0C0E0;    /* Lighter lavender-gray for borders, dividers */
+  --gradient: linear-gradient(120deg,#5B42F5 0%, #8A70E6 50%,#3A27D4 100%);
 }
 
 [data-theme="dark"] {
@@ -20,6 +21,7 @@
   --brand-hover: #3A27D4; /* Slightly darker purple for hover/active states */
   --support: #4C2EAA;     /* Deeper purple accent for badges, highlights */
   --hairline: #2A1A50;    /* Darker purple-gray for borders, dividers */
+  --gradient: linear-gradient( 120deg, #3A27D4 0%,#4C2EAA 50%,#1E0F4D 100%);
 }
 
 * {
@@ -57,7 +59,7 @@ header {
     padding: 0 2rem;            
 
     
-    background-color: var(--support);
+    background: var(--gradient);
     border-bottom: 1px solid var(--hairline);
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
@@ -215,15 +217,14 @@ header .links a:hover { color: var(--brand); }
 .about-section {
     position: relative;
     overflow: hidden;
-    background: var(--support);
+    background: var(--gradient);
     color: #fff;
 
     height: 90vh;    
     display: flex;
     justify-content: center;
     align-items: center;   
-    gap: 50px;
-    background-color: var(--support); 
+    gap: 50px;    
     padding-top: 60px;
     margin-top: -60px;    
 }
