@@ -143,7 +143,7 @@ header .links a:hover { color: var(--brand); }
 }
 
 .theme-toggle:active {
-    scale: 1.1;
+    scale: .95;
     color: #fff;
     transition: scale 0.1s ease, color 0.1s ease;
 }
