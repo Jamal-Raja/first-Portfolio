@@ -29,8 +29,7 @@
     font-family: 'poppins', sans-serif;
 }
 
-body {
-    height: 100vh;    
+body {    
     background-color: var(--bg);
     color: var(--text);        
 }
