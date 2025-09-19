@@ -50,11 +50,11 @@
                 </div>     
                 
                   <!-- SVG divider -->
-                <svg class="section-divider" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true">
-                    <!-- Change the fill to the BACKGROUND colour of the NEXT section (white here) -->
+                <svg class="section-divider" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true">                    
                     <polygon points="0,10 100,0 100,10 0,10"/>
                 </svg>
             </section>
+
             <!-- Projects Section -->
             <section class="projects-section" id="projects">                
                 <div class="projects-inner"> 
@@ -66,12 +66,54 @@
                     </div>
                     <!-- Right side -->
                     <div class="projects-art">
-                        <img src="images/design-showcase.svg" alt="Developer at desk illustration">
+                        <img src="images/design-showcase.svg" alt="Developer at desk illustration">            
                     </div>
                 </div>
-                <h2>Past Projects</h2>
-                <div></div>
+                <!-- Projects Grid -->
+                <h2 class="past-projects-h2">Past Projects</h2>
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-image-container">
+                            <img src="images/citiline-accountants-sc.png" alt="Citiline Accountants Homepage Screenshot">
+
+                            <!-- Extra info shown on hover -->
+                            <div class="project-overlay">
+                                <p>Designed and built a fully responsive site using HTML, CSS, JavaScript, and Python, tailored for a professional accounting practice. <br><br>
+                                Integrated Calendly to streamline client bookings, embedded a live HMRC news feed to keep users updated, and connected Slack webhooks to deliver instant callback notifications directly into the Citiline team’s in-house channel.<br><br>
+                                The result: a modern, client-focused platform that saves time, boosts team efficiency, and reinforces Citiline’s credibility as a forward-thinking accountancy firm.
+                            </div>
+
+                        </div>
+                        <h3>Citiline Accountants</h3>
+                        <p>Website design and deployment for a UK accounting firm.</p>
+                        <div class="project-links-container">
+                            <a href="https://github.com/Jamal-Raja/Citiline-Website.git" target="_blank">Github</a>
+                            <a href="https://jamal-raja.github.io/Citiline-Website/" target="_blank">Website</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                      <div class="project-card">
+                        <div class="project-image-container">
+                            <img src="images/project-2.png" alt="Another Project Screenshot">
+
+                            <!-- Extra info shown on hover -->
+                            <div class="project-overlay">
+                                <p>We're launching soon – stay tuned!</p> 
+                            </div>                           
+                        </div>
+                        <h3>We're launching soon – stay tuned!</h3>
+                        <p>We're launching soon – stay tuned!</p>
+                        <div class="project-links-container">
+                            <a href="#">Github</a>
+                            <a href="#">Website</a>
+                        </div>
+                    </div>
+                </div>
             </section>
+
             <!-- Contact Section -->
             <section class="contact-section" id="contact">
                 <h2>Contact</h2>
@@ -90,6 +132,7 @@
                     <button type="submit">Send</button>
             </section>
         </main>
+
         <!-- Footer Section -->
         <footer>
             <p>&copy; 2024 My Portfolio</p>

@@ -32,7 +32,7 @@
 body {
     height: 100vh;    
     background-color: var(--bg);
-    color: var(--text);    
+    color: var(--text);        
 }
 
 li {
@@ -367,6 +367,95 @@ header .links a:hover { color: var(--brand); }
     left: 20px;
     z-index: 1;                         
 }
+
+.past-projects-h2 {
+    text-align: center;
+    padding-top: 72px;    
+}
+
+.projects-grid {    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem; 
+    margin-top: 2rem;   
+}
+
+.project-card {
+    background-color: var(--surface);
+    border: 1px solid var(--hairline);
+    overflow: hidden;
+    border-radius: 10px;    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    padding: 1rem;
+}
+
+.project-card p {
+    font-family: Quicksand, sans-serif;
+}
+
+.project-card img {    
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    display: block;  
+}
+
+.project-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0;    
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;  
+    background: rgba(0, 0, 0, 0.85);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+}
+
+.project-image-container:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1rem;    
+}
+
+.project-links-container a {
+    font-family: Quicksand, sans-serif;
+    background-color: var(--brand);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2s ease;
+}
+
+.project-links-container a:hover {
+    scale: 1.05;
+    background-color: var(--brand-hover);
+    color: #fff;  
+}
+
 /* RESPONSIVE DESIGN */
 @media (max-width: 900px) {
   .projects-inner { 
