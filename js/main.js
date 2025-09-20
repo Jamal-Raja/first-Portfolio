@@ -33,3 +33,11 @@ toggleBtn.onclick = function() {
 
     toggleBtnIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
 }
+
+// Close mobile menu when a link is clicked
+document.querySelectorAll('.dropdown-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+        dropDownMenu.classList.remove('open');
+        toggleBtnIcon.classList = 'fa-solid fa-bars';
+    });
+});
