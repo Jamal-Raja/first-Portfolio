@@ -647,7 +647,7 @@ footer {
 }
 
 .footer-nav a {
-    color: var(--text-muted);
+    color: #C0B0DD;
     gap: 1.5rem;
     padding: 0 1rem;
     font-family: quicksand, sans-serif;
