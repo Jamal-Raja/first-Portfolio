@@ -638,4 +638,10 @@ header .links a:hover { color: var(--brand); }
     }
 }
 
+@media (max-width: 768px) {
+  .wave-divider {
+    height: 40vh;
+  }  
+}
+
 /* FOOTER */
