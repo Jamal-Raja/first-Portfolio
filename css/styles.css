@@ -309,10 +309,22 @@ header .links a:hover { color: var(--brand); }
         grid-template-columns: 1fr;
         gap: 14px;        
     }
+
+    .about-content h1 {              
+    font-size: 4rem;    
+    line-height: 1;             
+    }
+
+    .about-content p {
+    font-size: 0.1;
+    line-height: 1.6;    
+    }    
 }
 
 @media (max-width: 600px) {
   .section-divider { height: 72px; }
+
+  .projects-btn { justify-self: center; }
 }
 
 /* PROJECTS SECTION */
