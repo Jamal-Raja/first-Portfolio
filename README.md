@@ -31,7 +31,7 @@ It showcases my skills, projects, and experience, and provides a way for people 
 - **JavaScript (Vanilla)**
 
 ---
-
+```
 ## 📂 Project Structure
 PROJECT-PORTFOLIO/
 │
@@ -44,7 +44,7 @@ PROJECT-PORTFOLIO/
 ├── images/
 │
 └── index.html
-
+```
 ---
 
 ## 🚀 Getting Started
